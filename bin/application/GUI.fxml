@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="498.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="319.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="menuOpen" mnemonicParsing="false" onAction="#menuopen" text="Open" />
+              <MenuItem fx:id="menuClose" mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </MenuBar>
+      <Button fx:id="buttonGenerate" layoutX="195.0" layoutY="437.0" mnemonicParsing="false" onAction="#generateButtonAction" text="Button" />
+      <Label layoutX="30.0" layoutY="41.0" text="How many layers:" />
+      <Label layoutX="35.0" layoutY="136.0" text="Layer 1:" />
+      <Label fx:id="label" layoutX="35.0" layoutY="420.0" text="Label" />
+      <Label fx:id="labl2" layoutX="268.0" layoutY="136.0" text="Layer 2:" />
+      <RadioButton fx:id="rb1l" layoutX="30.0" layoutY="66.0" mnemonicParsing="false" text="1" />
+      <RadioButton fx:id="rb2l" layoutX="30.0" layoutY="94.0" mnemonicParsing="false" text="2" />
+      <ListView fx:id="lv1cmp" layoutX="35.0" layoutY="182.0" prefHeight="84.0" prefWidth="200.0" />
+      <ListView fx:id="lv1pads" layoutX="35.0" layoutY="305.0" prefHeight="84.0" prefWidth="200.0" />
+      <ListView fx:id="lv2cmp" layoutX="269.0" layoutY="182.0" prefHeight="84.0" prefWidth="200.0" />
+      <ListView fx:id="lv2pads" layoutX="269.0" layoutY="305.0" prefHeight="84.0" prefWidth="200.0" />
+      <Label layoutX="35.0" layoutY="159.0" text="Components layer:" />
+      <Label layoutX="35.0" layoutY="274.0" text="Pads layer:" />
+      <Label fx:id="labl2pads" layoutX="269.0" layoutY="274.0" text="Pads layer:" />
+      <Label fx:id="labl2cmp" layoutX="269.0" layoutY="159.0" text="Components layer:" />
+   </children>
+</AnchorPane>

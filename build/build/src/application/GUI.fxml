@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="498.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="319.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="menuOpen" mnemonicParsing="false" onAction="#menuopen" text="Open" />
+              <MenuItem fx:id="menuClose" mnemonicParsing="false" onAction="#zavri" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </MenuBar>
+      <Button fx:id="tlacitko" layoutX="108.0" layoutY="104.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Button" />
+      <Label fx:id="label" layoutX="35.0" layoutY="63.0" text="Label" />
+      <ListView fx:id="lv" layoutX="34.0" layoutY="159.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
