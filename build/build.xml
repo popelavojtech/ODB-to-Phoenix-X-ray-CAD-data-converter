@@ -87,7 +87,7 @@
 		</fx:resources>
 	
 		<fx:application id="fxApplication"
-			name=""
+			name="ODB++ to Phoenix X-ray CAD data converter"
 			mainClass="application.Main"
 		/>
 	
@@ -102,9 +102,9 @@
 			<fx:resources refid="appRes"/>
 	
 			<manifest>
-				<attribute name="Implementation-Vendor" value="daaa"/>
-				<attribute name="Implementation-Title" value=""/>
-				<attribute name="Implementation-Version" value="1"/>
+				<attribute name="Implementation-Vendor" value="ODB++ to Phoenix X-ray CAD data converter"/>
+				<attribute name="Implementation-Title" value="ODB++ to Phoenix X-ray CAD data converter"/>
+				<attribute name="Implementation-Version" value="9"/>
 				<attribute name="JavaFX-Feature-Proxy" value="None"/>
 			</manifest>
 		</fx:jar>
